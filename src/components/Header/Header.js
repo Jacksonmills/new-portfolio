@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components/macro';
+import { motion } from 'framer-motion';
 
 import { COLORS } from '../../constants';
 import Logo from '../Logo';
@@ -9,15 +10,15 @@ import { Twitter, GitHub } from 'react-feather';
 
 const Header = () => {
   return (
-    <HeaderWrapper>
-      <Wrapper>
+    <Wrapper>
+      <Nav>
         <LogoNavLink to='/'>
           <StyledLogo>Jackson Mills</StyledLogo>
         </LogoNavLink>
         <StyledNavLink to='/about'>About</StyledNavLink>
         <StyledNavLink to='/work'>Work</StyledNavLink>
         <StyledNavLink to='/contact'>Contact</StyledNavLink>
-      </Wrapper>
+      </Nav>
       <UserUtil>
         <UtilLink href='https://twitter.com/Jacksonmills'>
           <Twitter style={{ stroke: 'currentColor' }} />
@@ -26,11 +27,11 @@ const Header = () => {
           <GitHub style={{ stroke: 'currentColor' }} />
         </UtilLink>
       </UserUtil>
-    </HeaderWrapper>
+    </Wrapper>
   );
 };
 
-const HeaderWrapper = styled.header`
+const Wrapper = styled.header`
   display: flex;
 `;
 
@@ -45,7 +46,7 @@ const StyledNavLink = styled(NavLink)`
   font-weight: bolder;
 `;
 
-const Wrapper = styled.nav`
+const Nav = styled.nav`
   display: flex;
   flex: 1;
   gap: 48px;
