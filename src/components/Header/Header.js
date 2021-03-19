@@ -5,14 +5,17 @@ import styled from 'styled-components/macro';
 import { COLORS } from '../../constants';
 import Logo from '../Logo';
 
+import useWindowSize from '../../hooks/useWindowSize';
+
 import { Twitter, GitHub } from 'react-feather';
 
 const Header = () => {
+  const size = useWindowSize();
   return (
     <HeaderWrapper>
       <Wrapper>
         <LogoNavLink to='/'>
-          <StyledLogo>Jackson Mills</StyledLogo>
+          <StyledLogo>{size.width > 1000 ? 'Jackson Mills' : 'JM'}</StyledLogo>
         </LogoNavLink>
         <StyledNavLink to='/about'>About</StyledNavLink>
         <StyledNavLink to='/work'>Work</StyledNavLink>
