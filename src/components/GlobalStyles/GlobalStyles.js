@@ -55,7 +55,6 @@ const GlobalStyles = createGlobalStyle`
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: auto;
-    cursor: none;
   }
 
   #root {
@@ -64,8 +63,6 @@ const GlobalStyles = createGlobalStyle`
 
   html, body, #root {
     height: 100%;
-    background-color: hsl(0, 0%, 100%);
-    cursor: none;
   }
 `;
 
