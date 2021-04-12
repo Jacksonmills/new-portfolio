@@ -1,7 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import styled from 'styled-components/macro';
-import { motion } from 'framer-motion';
+import styled from 'styled-components';
 
 import { COLORS } from '../../constants';
 import Logo from '../Logo';
@@ -70,7 +69,6 @@ const UserUtil = styled.div`
   justify-content: space-evenly;
   align-items: center;
   flex: 0 1 20vw;
-  background-color: hsl(345, 100%, 50%);
   border-left: 8px solid ${COLORS.black};
   border-bottom: 8px solid ${COLORS.black};
 `;

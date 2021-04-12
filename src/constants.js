@@ -8,7 +8,7 @@ export const COLORS = {
     700: 'hsl(220, 5%, 40%)',
     900: 'hsl(220, 3%, 20%)',
   },
-  primary: 'hsl(74, 75%, 64%)',
+  primary: 'hsl(69, 100%, 50%)',
   secondary: 'hsl(336, 72%, 54%)',
 };
 

@@ -26,21 +26,7 @@ const App = () => {
 };
 
 const Wrapper = styled.main`
-  cursor: default;
-  cursor: url(/img/hit_small.png), default;
-  cursor: url(/img/hit_small.png), auto;
-  cursor: -webkit-image-set(url(/img/hit_small.png) 1x, url(/img/hit.png) 2x) 10
-      15,
-    auto;
-
-  a {
-    cursor: default;
-    cursor: url(/img/hit_small.png), default;
-    cursor: url(/img/hit_small.png), auto;
-    cursor: -webkit-image-set(url(/img/hit_small.png) 1x, url(/img/hit.png) 2x)
-        10 15,
-      auto;
-  }
+  height: 100%;
 `;
 
 export default App;
